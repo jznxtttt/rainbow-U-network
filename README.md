@@ -16,4 +16,10 @@ $$
 
 where f represents fee rate.
 
+Then the Bellman equation becomes
+
+$$
+(e_t+a_t)U(s_t)-|a_t|m_tf = \sum_{i=t}^{t+n}\gamma^{i-t}r_i + \arg\max_{a_{t+n}\in A} [(e_{t+n}+a_{t+n})U(s_{t+n}) - |a_{t+n}|m_{t+n}f]
+$$
+
 This method trains U-function instead of Q-function.
